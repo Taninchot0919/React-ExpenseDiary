@@ -6,7 +6,7 @@ const ExpenseList = (props) => {
   console.log(props.expenses)
   return (
     <div
-      className="space-y-3 mt-5 p-4 rounded-lg"
+      className="space-y-3 mt-5 p-4 rounded-lg shadow-lg"
       style={{
         backgroundImage:
           "linear-gradient(225deg, rgba(25, 136, 247, 0.94) 25%, rgba(247, 25, 136, 0.79) 69%)",

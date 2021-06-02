@@ -7,6 +7,9 @@ const ExpenseItem = (props) => {
       <h2 className="text-md font-semibold">
         Expense: <span className="font-medium">{props.expense.expense}</span>
       </h2>
+      <h2 className="text-sm font-semibold">
+        Added at: <span className="font-medium">{props.expense.added}</span>
+      </h2>
     </div>
   );
 };
