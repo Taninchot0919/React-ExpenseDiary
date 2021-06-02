@@ -52,7 +52,9 @@ const Home = () => {
   };
 
   const addingLocal = (expense) => {
-    setExpense(expenses.push(expense));
+    let oldArray = expenses;
+    oldArray.push(expense);
+    setExpense(oldArray);
   };
 
   return (

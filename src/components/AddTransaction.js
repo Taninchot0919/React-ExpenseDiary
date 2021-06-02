@@ -1,5 +1,5 @@
 import moment from "moment";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { useHistory } from "react-router";
 
 const AddTransactionModal = (props) => {
@@ -24,6 +24,7 @@ const AddTransactionModal = (props) => {
       if (res.ok) {
         history.push("/");
         props.addingLocal(expenseObj);
+        props.setAddModalOff();
       }
     });
   };
