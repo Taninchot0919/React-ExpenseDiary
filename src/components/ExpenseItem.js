@@ -1,6 +1,9 @@
 const ExpenseItem = (props) => {
   return (
-    <div className="border px-3 py-4 bg-white rounded-lg">
+    <div
+      className="border px-3 py-4 bg-white rounded-lg"
+      onClick={props.editModal}
+    >
       <h2 className="text-md font-semibold">
         Expense Name: <span className="font-medium">{props.expense.name}</span>{" "}
       </h2>
